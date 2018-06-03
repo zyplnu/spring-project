@@ -1,0 +1,6 @@
+spring的理念就是：基于POJO（plain old java object）
+ioc：注入的几种方法
+    1）构造方法注入
+    2）setter注入
+    3）接口注入
+
