@@ -3,7 +3,15 @@
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-    <bean id="hyena" class="com.hyena.spring.model.User" name="user">
-
+    <bean id="hyena" class="com.hyena.spring.model.User" name="tomcat">
     </bean>
+
+    <bean class="com.hyena.spring.model.User" name="jboss">
+        <constructor-arg name="name" value="jboss">
+        </constructor-arg>
+        <constructor-arg name="age" type="int">
+            <value>4</value>
+        </constructor-arg>
+    </bean>
+
 </beans>

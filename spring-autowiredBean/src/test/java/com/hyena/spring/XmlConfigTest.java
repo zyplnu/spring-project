@@ -19,7 +19,12 @@ public class XmlConfigTest {
                 new ClassPathXmlApplicationContext("com/hyena/spring/xmlconfig/beans.xml");
         // getBean方法首先查看Bean标签的name属性，如果没有则查看id属性----下面的首先查看name属性为user的，其次查看id属性为user的
 
-        Object user = context.getBean("user");
-        System.out.println(user instanceof User);
+        Object tomcat = context.getBean("tomcat");
+        Object jboss = context.getBean("jboss");
+//        System.out.println(tomcat instanceof User);  ----- passed
+        User jbossUser = (User) jboss ;
+        System.out.println("contruct bean ---"+ "name: " + jbossUser.getName() + " age: " + jbossUser.getAge()); // ---passed
+
+
     }
 }
