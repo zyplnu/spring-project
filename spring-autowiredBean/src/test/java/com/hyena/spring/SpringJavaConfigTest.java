@@ -16,12 +16,11 @@ public class SpringJavaConfigTest {
 
 
     @Autowired
-    private MyService service ;
-
+    private MyService service;
 
 
     @Test
     public void doTest() {
-        System.out.println(service  + " " + service.hashCode());
+        System.out.println(service + " " + service.hashCode());
     }
 }

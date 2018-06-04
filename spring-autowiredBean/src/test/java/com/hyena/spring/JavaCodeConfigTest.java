@@ -2,11 +2,9 @@ package com.hyena.spring;
 
 
 import com.hyena.spring.config.JavaCodeConfig;
-import com.hyena.spring.model.MyService;
 import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
@@ -30,7 +28,7 @@ public class JavaCodeConfigTest {
         AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext("com.hyena");
         Object actual = context.getBean("myservice");
         Object expected = context.getBean("myservice");
-        Assert.assertEquals(expected , actual);
+        Assert.assertEquals(expected, actual);
     }
 
 }
